@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CalendarRecurrenceComponent } from './calendar-recurrence.component';
+import { RecurrenceComponent } from './recurrence.component';
 
-describe('CalendarRecurrenceComponent', () => {
-  let component: CalendarRecurrenceComponent;
-  let fixture: ComponentFixture<CalendarRecurrenceComponent>;
+describe('RecurrenceComponent', () => {
+  let component: RecurrenceComponent;
+  let fixture: ComponentFixture<RecurrenceComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CalendarRecurrenceComponent ]
+      declarations: [ RecurrenceComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CalendarRecurrenceComponent);
+    fixture = TestBed.createComponent(RecurrenceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

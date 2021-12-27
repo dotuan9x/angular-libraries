@@ -3,7 +3,34 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 - How to create [angular libraries](https://angular.io/guide/creating-libraries)
+- [Complete guide to angular libraries](https://www.willtaylor.blog/complete-guide-to-angular-libraries/)
 - To create new library, typing `ng generate library my-lib` at root folder
+
+## How to create and publish your library
+```shell
+# cd folder project/calendar-recurrence/src/lib
+# Then create module and component (1 module per 1 component)
+ng generate module components/example-component
+ng generate component component/example-component
+
+# After develop feature of component, export your component at ngModule of module 
+@NgModule({
+  declarations: [
+    RecurrenceComponent
+  ],
+  imports: [
+    CommonModule
+  ],
+  exports: [
+    RecurrenceComponent
+  ]
+})
+
+# Run command prompt to build library
+ng build --project=calendar-recurrence
+
+# Then cd dist/calendar-recurrence and publish your component
+```
 
 ## Development server
 
